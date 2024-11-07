@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Secciones con Botones</title>
+</head>
+<body>
+    <section class="header-section">
+        <img src="./papas fritas.jpeg" alt="Imagen encabezado" class="header-img"> 
+        <div class="logo-container">
+            <img src="./Logo Sencillo Neón para Bar.png" alt="Logo" class="logo">
+        </div>
+        <div class="info">
+            <h1>Bienvenido a Nuestro Restaurante</h1>
+            <p>Descubre nuestros deliciosos platos y disfruta de una experiencia única.</p>
+        </div>
+    </section>
+
+    <div class="button-container">
+        <a href="#pizza" class="nav-link">Pizza</a>
+        <a href="#hamburguesas" class="nav-link">Hamburguesas</a>
+        <a href="#pastas" class="nav-link">Pastas</a>
+        <a href="#bebidas" class="nav-link">Bebidas</a>
+        <a href="#vinos" class="nav-link">Vinos</a>
+        <a href="#postres" class="nav-link">Postres</a>
+    </div>
+
+    <section id="pizza" class="food-section">
+        <div class="food-image-container">
+            <img src="./pizza.jpeg" alt="Imagen de Pizza" class="food-image" onclick="openModal()">
+        </div>
+        <div class="food-description">
+            <p><strong>Pizza común</strong></p>
+            <p>Las más ricas del mundo</p>
+            <p>5 euros</p>
+        </div>
+    </section>
+
+    <!-- Modal para la imagen ampliada -->
+    <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="img01">
+    </div>
+
+    <section id="hamburguesas">Contenido de Hamburguesas</section>
+    <section id="pastas">Contenido de Pastas</section>
+    <section id="bebidas">Contenido de Bebidas</section>
+    <section id="vinos">Contenido de Vinos</section>
+    <section id="postres">Contenido de Postres</section>
+
+    <script src="script.js"></script>
+</body>
+</html>

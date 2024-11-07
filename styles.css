@@ -1,0 +1,150 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header-section {
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f9fa;
+    max-width: 700px;
+    margin: 0 auto; /* Centrar la sección */
+    position: relative; /* Para posicionar el logo relativo a esta sección */
+}
+
+.header-img {
+    width: 100%;
+    height: 30vh; /* Altura de la imagen */
+    object-fit: cover; /* Para asegurar que la imagen cubra el espacio disponible */
+    max-width: 700px; /* Ancho máximo de la imagen */
+}
+
+.info {
+    padding: 10px 0;
+}
+
+.logo-container img {
+    width: 150px;
+    height: 150px; 
+    margin-top: -75px; 
+    border-radius: 50%;
+}
+
+.logo {
+    width: 100%;
+    height: 100%;
+}
+
+.button-container {
+    display: flex;
+    overflow-x: auto; /* Habilitar scroll horizontal */
+    white-space: nowrap; /* Evitar que los botones se envuelvan en líneas */
+    max-width: 700px;
+    margin: 20px auto; /* Centrar el contenedor de botones */
+    background-color: #f8f9fa;
+    z-index: 1000; /* Asegurarse de que esté por encima de otros elementos */
+    padding: 10px 0;
+    position: -webkit-sticky; /* Compatibilidad con navegadores Webkit */
+    position: sticky;
+    top: 0; /* Para mantenerlo fijo en la parte superior de la ventana al hacer scroll */
+}
+
+/* Estilos para la barra de desplazamiento horizontal */
+.button-container::-webkit-scrollbar {
+    height: 6px; /* Altura de la barra de desplazamiento */
+}
+
+.button-container::-webkit-scrollbar-thumb {
+    background-color: #007bff; /* Color azul para la barra de desplazamiento */
+    border-radius: 10px; /* Bordes redondeados para la barra de desplazamiento */
+}
+
+.button-container::-webkit-scrollbar-track {
+    background: transparent; /* Fondo transparente para la pista de desplazamiento */
+}
+
+.nav-link {
+    display: inline-block;
+    padding: 14px 20px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    background-color: #007bff;  /* Color azul */
+    border: none;
+    border-radius: 4px;
+    margin: 5px;  /* Para agregar espacio entre los botones */
+}
+
+.nav-link.active {
+    background-color: #0056b3;  /* Azul más oscuro para el estado activo */
+}
+
+.nav-link:hover {
+    background-color: #0056b3;  /* Azul más oscuro en hover */
+}
+
+section {
+    padding: 60px 20px;
+    max-width: 700px;
+    margin: 50px auto; /* Centrar la sección */
+}
+
+.food-section {
+    display: flex;
+    align-items: center;
+}
+
+.food-image-container {
+    margin-right: 20px;
+}
+
+.food-image {
+    width: 120px;
+    height: 120px;
+    cursor: pointer;
+}
+
+.food-description {
+    flex: 1;
+}
+
+/* Estilos para el modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.9);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
